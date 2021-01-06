@@ -5,12 +5,11 @@ class Anagram
       @word = word.split("")
   end
   def match(word_array)
-    word_array.each do |word|
+    word_array.map do |word|
       letters = word.split('')
-      if letters.sort == @word.sort
-        @word
-      else []
-      end
+    a = letters.sort
+    b = @word.sort
+    a=b ? word : nil
     end
   end
 end
