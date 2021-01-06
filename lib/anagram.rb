@@ -2,7 +2,8 @@
 class Anagram
   attr_accessor :word
   def initialize(word)
-    @word = word.split("").reverse
+    reverse = word.split("").reverse
+    @word = reverse
   end
   def match(word)
     word.include?(@word) ? @word : []
