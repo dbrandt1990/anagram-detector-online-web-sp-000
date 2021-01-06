@@ -9,7 +9,8 @@ class Anagram
     word_array.each do |word|
       letters = word.split('')
       if letter == @word
-        true
+        @word
+      else []
       end
     end
   end
