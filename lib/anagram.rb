@@ -6,5 +6,6 @@ class Anagram
   end
   def match(word)
     word.include?(@word) ? @word : []
+    puts @word
   end
 end
