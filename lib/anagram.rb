@@ -3,7 +3,7 @@ class Anagram
   attr_accessor :word
   def initialize(word)
     arr = word.split("")
-    @word = arr.reverse
+    @word = arr.reverse()
   end
   def match(word)
     word.include?(@word) ? @word : []
