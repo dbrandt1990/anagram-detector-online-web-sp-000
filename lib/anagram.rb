@@ -5,7 +5,7 @@ class Anagram
       @word = word.split("")
   end
   def match(word_array)
-    word_array.map do |word|
+    words = word_array.map do |word|
       letters = word.split('')
     a = letters.sort
     b = @word.sort
@@ -13,5 +13,6 @@ class Anagram
       word 
     end
     end
+    return words.compact
   end
 end
