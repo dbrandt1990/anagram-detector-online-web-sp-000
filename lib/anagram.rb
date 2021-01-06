@@ -9,7 +9,7 @@ class Anagram
       letters = word.split('')
     a = letters.sort
     b = @word.sort
-    a == b ? word 
+    if  a == b {word} 
     end
   end
 end
