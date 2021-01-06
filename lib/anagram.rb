@@ -1,3 +1,3 @@
 # Your code goes here!
-clase Anagram
+class Anagram
 end
