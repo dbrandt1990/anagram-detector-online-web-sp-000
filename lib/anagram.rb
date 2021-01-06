@@ -2,8 +2,7 @@
 class Anagram
   attr_accessor :word
   def initialize(word)
-    arr = word.split("")
-    @word = arr.reverse
+      @word = word.split("")
   end
   def match(word_array)
     word_array.each do |word|
