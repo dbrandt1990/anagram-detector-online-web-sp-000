@@ -4,4 +4,7 @@ class Anagram
   def initialize(word)
     @word = word.split("").reverse
   end
+  def match(word)
+    word == @word ? true : false
+  end
 end
