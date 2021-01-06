@@ -3,10 +3,14 @@ class Anagram
   attr_accessor :word
   def initialize(word)
     arr = word.split("")
-    @word = arr.reverse()
+    @word = arr.reverse
   end
-  def match(word)
-    word.include?(@word) ? @word : []
-    puts @word
+  def match(word_array)
+    word_array.each do |word|
+      letters = word.split('')
+      if letter == @word
+        true
+      end
+    end
   end
 end
