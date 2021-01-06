@@ -5,6 +5,6 @@ class Anagram
     @word = word.split("").reverse
   end
   def match(word)
-    word == @word ? word : []
+    word.include?(@word) ? word : []
   end
 end
