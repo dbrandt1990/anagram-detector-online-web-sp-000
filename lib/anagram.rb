@@ -1,5 +1,5 @@
 # Your code goes here!
 clase Anagram
-  def initialize()
+  def initialize
   end
 end
